@@ -1,0 +1,199 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=" NDAWN - STREETwEAR BRAND ">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="respon.css">
+        <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title> NDAWN Store</title>
+    </head>
+    <body>
+   <div class="top-bar">
+        <div class="top-logo">
+            <a href="index.html">
+            <h1> NDAWN </h1>
+            </a>
+         </div>
+        <p class="Cart-mobile">
+            <a href="Cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+        </p>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <p> NDAWN </p>
+            <div class="search-mobile">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+                <input type="text" class="search-box" placeholder="Search...">
+            </div>
+            <li><a href="index.html" class="btn-filter" data-filter="tops">Tops</a></li>
+            <li><a href="index.html?filter=bottoms" class="btn-filter" data-filter="bottoms">Bottoms</a></li>
+            <li><a href="index.html?filter=outerwears" class="btn-filter" data-filter="outerwears">Outerwears</a></li>
+            <li><a href="index.html?filter=accessories" class="btn-filter" data-filter="accessories">Accessories</a></li>
+            <li class="menu-item"> <a href="Collection (1).html">Collection</a> </li>
+            <li class="menu-item"> <a href="BestSeller.html">Best Seller</a> </li>
+            <li class="menu-item"> <a href="About.html">About Us</a> </li>
+            <li class="menu-item"><a href="Login.html">Đăng Nhập/Kí</a></li>
+        </ul>
+        
+        <div class="hideOnMobile">
+        <div class="top-menu"> 
+        <div class="menu-item">
+            <li class ="dropdown">Shop
+                <ul class="dropdown-content">
+                    <li>
+                        <a href="index.html?filter=tops">Tops</a>
+                    </li>
+                    <li>   
+                        <a href="index.html?filter=bottoms">Bottoms</a>
+                    </li>
+                    <li>
+                        <a href="index.html?filter=outerwears">Outerwears</a>
+                    </li>
+                    <li>
+                        <a href="index.html?filter=accessories">Accessories</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item"> <a href="Collection (1).html">Collection</a> </li>
+            <li class="menu-item"> <a href="BestSeller.html">Best Seller</a> </li>
+            <li class="menu-item"> <a href="About.html">About Us</a> </li>
+        </div>
+        </div>
+        </div>
+            <p class="menu-button" onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></p>
+        <div class="hideOnMobile">
+        <div class="top-menu-icon">
+        <ul>
+            <li>
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <input type="text" id="search-box" class="search-box" placeholder="Tìm kiếm..." style="display:none;">
+            </li>
+            <li>
+               <a href="Cart.html">
+                <span class="icon-circle"><i class="fa-solid fa-cart-shopping"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="Login.html">
+                <span class="icon-circle"><i class="fa-solid fa-user"></i></span>
+                </a>
+            </li>
+        </ul>
+        </div>
+        </div> 
+        </div>
+    </div>
+    <!------------------------------ khúc giữa---------------->
+    <div class="main-logo">
+        <img src="Image/pexels-ron-lach-9771509.jpg" alt="">
+    </div>
+    <!--------------------------sản phẩm---------------------->
+    <section class="product">   
+    <div class="main-content">
+        <div class="new-content">
+        <h2>NEW ARRIVALS</h2>
+        </div>
+
+        <div class="top-content row">
+        <div class="top-content-item" data-name="NDAWN POLO BLACK" data-price="400000" data-clothes="tops" >
+            <a href="Detail.html?id=1"><img src="Image/image 3.png" alt="NDAWN POLO BLACK"></a>
+            <h1>NDAWN POLO BLACK</h1>
+            <p>400.000<sup>đ</sup></p>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="top-content-item" data-name="NDAWN SHORTS BLACK" data-price="300000" data-clothes="bottoms" >
+            <a href="Detail.html?id=2"><img src="Image/image 4.png" alt="NDAWN SHORTS BLACK"></a>
+            <h1>NDAWN SHORTS BLACK</h1>
+            <p>300.000<sup>đ</sup></p>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="top-content-item" data-name="NDAWN DENIM JACKET" data-price="800000" data-clothes="outerwears" >
+            <a href="Detail.html?id=3"><img src="Image/image 2.png" alt="NDAWN DENIM JACKET"></a>
+            <h1>NDAWN DENIM JACKET</h1>
+            <p>800.000<sup>đ</sup></p>
+        </div>
+
+        <!-- Sản phẩm 4 -->
+        <div class="top-content-item" data-name="NDAWN T-Shirt" data-price="250000" data-clothes="tops" >
+            <a href="Detail.html?id=4"><img src="Image/image 1.png" alt="NDAWN T-Shirt"></a>
+            <h1>NDAWN T-Shirt</h1>
+            <p>250.000<sup>đ</sup></p>
+        </div>
+
+        <!-- Sản phẩm 5 -->
+        <div class="top-content-item" data-name="NDAWN TEE BLACK" data-price="400000" data-clothes="tops">
+            <a href="Detail.html?id=5"><img src="Image/image 5.png" alt="NDAWN TEE BLACK"></a>
+            <h1>NDAWN TEE BLACK</h1>
+            <p>400.000<sup>đ</sup></p>
+        </div>
+
+        <!-- Sản phẩm 6 -->
+        <div class="top-content-item" data-name="NDAWN TEE BLACK" data-price="600000" data-clothes="bottoms">
+            <a href="Detail.html?id=6"><img src="Image/image 6.png" alt="NDAWN TEE BLACK"></a>
+            <h1>NDAWN TEE BLACK</h1>
+            <p>600.000<sup>đ</sup></p>
+        </div>
+
+        <!-- Sản phẩm 7 -->
+        <div class="top-content-item" data-name="BANDANA BLACK" data-price="150000" data-clothes="accessories">
+            <a href="Detail.html?id=7"><img src="Image/image 7.png" alt="BANDANA BLACK"></a>
+            <h1>BANDANA BLACK</h1>
+            <p>150.000<sup>đ</sup></p>
+        </div>
+
+        <!-- Sản phẩm 8 -->
+        <div class="top-content-item" data-name="NDAWN NECKLACE GREY" data-price="400000" data-clothes="accessories" >
+            <a href="Detail.html?id=8"><img src="Image/image 8.png" alt="NDAWN NECKLACE GREY"></a>
+            <h1>NDAWN NECKLACE GREY</h1>
+            <p>400.000<sup>đ</sup></p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-----------footer-------------->  
+    <div class="footer-content">
+        <div class="footer-item">
+            <h1>Hệ Thống Cửa Hàng</h1>
+            <p>The New Playground, Lê Thánh Tôn, Q1</p>
+        </div>
+            <div class="footer-item">
+                <h1>Chính Sách</h1>
+                <ul>
+                    <li>Chính Sách Bảo Mật</li>
+                    <li>FAQ</li>
+                    <li>Chính Sách Bảo Hành & Đổi Trả</li>
+                </ul>       
+            </div>
+            <div class="footer-item">
+                <h1>Social Media</h1>
+                <span class="icon-circle"><i class="fa-brands fa-facebook"></i></span>
+                <span class="icon-circle"><i class="fa-brands fa-youtube"></i></span>
+                <span class="icon-circle"><i class="fa-brands fa-instagram"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-------------------Map--------------------->
+    <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.421676159565!2d106.7028049888834!3d10.778980456462854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f002fdcd473%3A0x42516d88454a95ed!2zVGhlIG5ldyBQbGF5Z3JvdW5kIMSQ4buTbmcgS2jhu59p!5e0!3m2!1svi!2s!4v1753653361531!5m2!1svi!2s" 
+            width="1200" height="500" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>  
+
+    <!----------------Bản Quyền------------------------>
+        <div class="copyright-content">
+            <p>© 2025 NDAWN VIETNAM. Powered by Haravan</p>
+        </div>
+
+
+
+    <script src="jss.js"></script>
+    </body>
+    </html>

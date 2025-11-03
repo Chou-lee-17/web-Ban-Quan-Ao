@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" NDAWN - STREETwEAR BRAND ">
+    <link rel="stylesheet" href="Cart.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title> NDAWN Store</title>
+</head>
+<body>
+ <div class="top-bar">
+        <div class="top-logo">
+            <a href="index.html">
+            <h1> NDAWN </h1>
+            </a>
+         </div>
+        <p class="Cart-mobile">
+            <a href="Cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+        </p>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <p> NDAWN </p>
+            <div class="search-mobile">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+                <input type="text" class="search-box" placeholder="Search...">
+            </div>
+            <li><a href="index.html" class="btn-filter" data-filter="tops">Tops</a></li>
+            <li><a href="index.html?filter=bottoms" class="btn-filter" data-filter="bottoms">Bottoms</a></li>
+            <li><a href="index.html?filter=outerwears" class="btn-filter" data-filter="outerwears">Outerwears</a></li>
+            <li><a href="index.html?filter=accessories" class="btn-filter" data-filter="accessories">Accessories</a></li>
+            <li class="menu-item"> <a href="Collection (1).html">Collection</a> </li>
+            <li class="menu-item"> <a href="BestSeller.html">Best Seller</a> </li>
+            <li class="menu-item"> <a href="About.html">About Us</a> </li>
+            <li class="menu-item"><a href="Login.html">Đăng Nhập/Kí</a></li>
+        </ul>
+        
+        <div class="hideOnMobile">
+        <div class="top-menu"> 
+        <div class="menu-item">
+            <li class ="dropdown">Shop
+                <ul class="dropdown-content">
+                    <li>
+                        <a href="index.html?filter=tops">Tops</a>
+                    </li>
+                    <li>   
+                        <a href="index.html?filter=bottoms">Bottoms</a>
+                    </li>
+                    <li>
+                        <a href="index.html?filter=outerwears">Outerwears</a>
+                    </li>
+                    <li>
+                        <a href="index.html?filter=accessories">Accessories</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item"> <a href="Collection (1).html">Collection</a> </li>
+            <li class="menu-item"> <a href="BestSeller.html">Best Seller</a> </li>
+            <li class="menu-item"> <a href="About.html">About Us</a> </li>
+        </div>
+        </div>
+        </div>
+            <p class="menu-button" onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></p>
+        <div class="hideOnMobile">
+        <div class="top-menu-icon">
+        <ul>
+            <li>
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <input type="text" id="search-box" class="search-box" placeholder="Tìm kiếm..." style="display:none;">
+            </li>
+            <li>
+               <a href="Cart.html">
+                <span class="icon-circle"><i class="fa-solid fa-cart-shopping"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="Login.html">
+                <span class="icon-circle"><i class="fa-solid fa-user"></i></span>
+                </a>
+            </li>
+        </ul>
+        </div>
+        </div> 
+        </div>
+    </div>
+    <!--khucs giua-->
+  <div class="cart-container">
+  <h2 class="cart-title">🛒 Giỏ Hàng</h2>
+  
+  <table class="cart-table" id="cart-table">
+    <thead>
+      <tr>
+        <th>Sản phẩm</th>
+        <th>Giá</th>
+        <th>Số lượng</th>
+        <th>Thành tiền</th>
+        <th>Xóa</th>
+      </tr>
+    </thead>
+    <tbody id="cart-body">
+      <!-- JavaScript sẽ render ở đây -->
+    </tbody>
+  </table>
+
+  <p id="empty-cart" style="text-align:center; display:none;">Giỏ hàng trống.</p>
+
+  <div class="cart-summary">
+    <span>Tổng cộng:</span>
+    <span id="cart-total">0đ</span>
+  </div>
+
+  <div class="cart-buttons">
+    <a href="Home.html">Tiếp tục mua sắm</a>
+    <button id="checkout-btn">Thanh toán</button>
+  </div>
+</div>
+  <script src="Cart.js" defer></script>
+</body>
+</html>

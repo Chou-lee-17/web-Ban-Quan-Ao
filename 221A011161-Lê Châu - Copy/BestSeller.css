@@ -1,0 +1,67 @@
+/* --- Layout chung --- */
+.bestseller-wrapper {
+  max-width: 1200px;
+  margin: 100px auto 60px;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.bestseller-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #962525;
+  font-family: 'Inria Serif', serif;
+  margin-bottom: 40px;
+}
+
+/* --- Grid sản phẩm --- */
+.bestseller-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* --- Item sản phẩm --- */
+.bestseller-item {
+  background-color: #fdfdfd;
+  padding: 20px;
+  width: 100%;
+  max-width: 220px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.bestseller-item img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.bestseller-item h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.bestseller-item p {
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* --- Hover giữ lại --- */
+.bestseller-item:hover {
+  transform: scale(1.05);
+  border-color: #962525;
+  border-radius: 12px;
+}
+
+.bestseller-item:hover img {
+  transform: scale(1.1);
+}

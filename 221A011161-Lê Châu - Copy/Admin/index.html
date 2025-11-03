@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ND Admin</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="respon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Dashboard</li>
+                <li><i class="fa-solid fa-box"></i> Product</li>
+                <li><i class="fa-solid fa-inbox"></i> Inbox</li>
+                <li><i class="fa-solid fa-gear"></i> Setting</li>
+            </ul>
+            <div class="help">
+                <i class="fa-solid fa-question-circle"></i> Help
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="top-bar">
+            <a href="index.html" class="logo">
+                <h2>ND Admin</h2>
+            </a>
+            <input type="text" id="search" placeholder="Search...">
+            <div class="admin">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-user"></i> Admin ▼
+            </div>
+        </div>
+
+        <h2>Dashboard</h2>
+
+        <div class="cards">
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <div class="number" id="totalUsers">1300</div>
+                <div class="label">Total Users</div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <div class="number" id="totalOrders">15.5K</div>
+                <div class="label">Total Orders</div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="number" id="totalSales">$60.8K</div>
+                <div class="label">Total Sales</div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-star"></i>
+                <div class="number" id="userGrowth">800</div>
+                <div class="label">User Growth</div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User</th>
+                    <th>Date</th>
+                    <th>Rank</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <tr>
+                    <td>ND5043</td>
+                    <td>Robert</td>
+                    <td>25/7/2025</td>
+                    <td>Silver</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>ND6098</td>
+                    <td>David</td>
+                    <td>22/7/2025</td>
+                    <td>Gold</td>
+                    <td>$600</td>
+                </tr>
+                <tr>
+                    <td>ND4043</td>
+                    <td>Ava</td>
+                    <td>25/7/2025</td>
+                    <td>Silver</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>ND1043</td>
+                    <td>Rose</td>
+                    <td>25/6/2025</td>
+                    <td>Diamond</td>
+                    <td>$850</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Admin.js"></script>
+</body>
+</html>
+</xaiArtifact

@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: 'Inria Serif', sans-serif;
+  min-height: 100vh;
+}
+.collection-wrapper {
+  max-width: 1300px;
+  margin: 120px auto 40px auto;
+  padding: 0 20px;
+}
+
+.collection-title {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.collection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+.collection-item {
+  width: 220px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  padding: 16px 8px;
+}
+
+.collection-item:hover {
+  transform: translateY(-8px);
+  border-color: #962525;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.collection-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.collection-item:hover img {
+  transform: scale(1.05);
+}
+
+.collection-item h2 {
+  font-family: 'Inria Serif', serif;
+  font-size: 20px;
+  margin: 6px 0;
+}
+
+.collection-item p {
+  font-size: 18px;
+  margin: 0;
+}
+.collection-subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Inria Serif', serif;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #962525;
+}
+
+/* Giá cũ khi sale */
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.sale-price {
+  color: #d63031;
+  font-weight: bold;
+}
